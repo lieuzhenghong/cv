@@ -74,10 +74,18 @@ body.A5.landscape .sheet {
   body {
     background: #e0e0e0
   }
+
   .sheet {
     background: white;
     box-shadow: 0 .5mm 2mm rgba(0, 0, 0, .3);
     margin: auto;
     margin-top: 5mm;
+  }
+
+}
+
+@media print {
+  #page {
+    display: none;
   }
 }

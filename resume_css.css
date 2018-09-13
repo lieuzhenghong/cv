@@ -1,0 +1,127 @@
+@page {
+    size: A4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Crimson Text', serif;
+}
+
+@media screen {
+    body {
+        background-color: #e0e0e0;
+    }
+
+    .sheet {
+        margin: 0 auto;
+        background-color: white;
+        max-width: 800px;
+    }
+
+    #gutters {
+        padding-top: 1em;
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 1em;
+    }
+
+}
+
+@media print {
+    #download_bar {
+        display: none;
+    }
+
+    .sheet {
+        width: 210mm;
+        margin: 0 auto;
+        background-color: white;
+    }
+
+    #gutters {
+        padding-top: 5mm;
+        padding-left: 15mm;
+        padding-right: 15mm;
+        padding-bottom: 5mm;
+    }
+}
+
+#page {
+    display: block;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+h1 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-right: 1em;
+    min-width: 100px;
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(100, 100, 250);
+}
+
+#title_bar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flex_duo {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.duo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.duo_1_header_2 {
+    font-family: "Ubuntu Mono";
+}
+
+h3 {
+    display: inline;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+hr {
+    color: rgba(220, 220, 220, 0.9);
+    max-width: 75%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.tech_stack {
+    font-family: "Ubuntu Mono";
+    font-size: 1em;
+}
+
+ul li {
+    margin-left: 1em;
+}
+
+ul li ul li {
+    font-style: italic;
+}

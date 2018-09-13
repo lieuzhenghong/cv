@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Crimson Text', 'Garamond', serif;
+    max-width: 600px;
+}
+
+#page {
+    display: none;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+h1 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-right: 1em;
+    min-width: 6rem;
+}
+
+a {
+    color: #6464FA !important;
+}
+
+#title_bar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flex_duo {
+    display: -webkit-box;
+    margin-bottom: 20px;
+}
+
+.duo {
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+}
+
+.duo_1_header_2 {
+    font-family: "Ubuntu Mono", sans-serif;
+}
+
+h3 {
+    display: inline;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+hr {
+    color: rgba(220, 220, 220, 0.9);
+    max-width: 75%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.tech_stack {
+    font-family: "Ubuntu Mono", sans-serif;
+    font-size: 1em;
+}
+
+ul li {
+    margin-left: 1em;
+}
+
+ul li ul li {
+    font-style: italic;
+}
