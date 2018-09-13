@@ -68,6 +68,10 @@ a {
     justify-content: space-between;
 }
 
+.duo_1 {
+    flex-basis: 100%;
+}
+
 .duo_1_header_2 {
     font-family: "Ubuntu Mono";
 }
@@ -119,6 +123,10 @@ ul li ul li {
         flex-basis: 4rem;
     }
 
+    .duo_1 {
+        flex-basis: auto;
+    }
+
 }
 
 
@@ -146,5 +154,9 @@ ul li ul li {
 
     .title_duo {
         flex-basis: 4rem;
+    }
+
+    .duo_1 {
+        flex-basis: auto;
     }
 }
