@@ -12,48 +12,16 @@ body {
     font-family: 'Crimson Text', serif;
 }
 
-@media screen {
-    body {
-        background-color: #e0e0e0;
-    }
-
-    .sheet {
-        margin: 0 auto;
-        background-color: white;
-        max-width: 800px;
-    }
-
-    #gutters {
-        padding-top: 1em;
-        padding-left: 3em;
-        padding-right: 3em;
-        padding-bottom: 1em;
-    }
-
-}
-
-@media print {
-    #download_bar {
-        display: none;
-    }
-
-    .sheet {
-        width: 210mm;
-        margin: 0 auto;
-        background-color: white;
-    }
-
-    #gutters {
-        padding-top: 5mm;
-        padding-left: 15mm;
-        padding-right: 15mm;
-        padding-bottom: 5mm;
-    }
-}
-
-#page {
-    display: block;
+#download_bar {
     text-align: center;
+    background-color: #e0e0e0;
+}
+
+#gutters {
+    padding-top: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 1em;
 }
 
 h1,
@@ -71,9 +39,8 @@ h1 {
 h2 {
     font-size: 1.2rem;
     margin-right: 1em;
-    min-width: 100px;
+    min-width: 4rem;
 }
-
 
 a {
     text-decoration: none;
@@ -87,11 +54,17 @@ a {
 
 .flex_duo {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 10px;
+}
+
+.title_duo {
+    flex-basis: 100%;
 }
 
 .duo {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -124,4 +97,54 @@ ul li {
 
 ul li ul li {
     font-style: italic;
+}
+
+@media screen and (min-width:600px) {
+    body {
+        background-color: #e0e0e0;
+    }
+
+    .sheet {
+        margin: 0 auto;
+        background-color: white;
+        max-width: 800px;
+    }
+
+
+    .flex_duo {
+        flex-wrap: nowrap;
+    }
+
+    .title_duo {
+        flex-basis: 4rem;
+    }
+
+}
+
+
+@media print {
+    #download_bar {
+        display: none;
+    }
+
+    .sheet {
+        width: 210mm;
+        margin: 0 auto;
+        background-color: white;
+    }
+
+    #gutters {
+        padding-top: 5mm;
+        padding-left: 15mm;
+        padding-right: 15mm;
+        padding-bottom: 5mm;
+    }
+
+    .flex_duo {
+        flex-wrap: nowrap;
+    }
+
+    .title_duo {
+        flex-basis: 4rem;
+    }
 }
