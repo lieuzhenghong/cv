@@ -8,7 +8,7 @@
 }
 
 body {
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Crimson Text', serif;
 }
 
@@ -40,6 +40,12 @@ h2 {
     font-size: 1.2rem;
     margin-right: 1em;
     min-width: 4rem;
+}
+
+h3 {
+    display: inline;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 a {
@@ -76,10 +82,10 @@ a {
     font-family: "Ubuntu Mono";
 }
 
-h3 {
-    display: inline;
-    font-size: 1rem;
-    font-weight: 600;
+#languages_and_technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 hr {
@@ -111,19 +117,31 @@ ul li ul li {
     .sheet {
         margin: 0 auto;
         background-color: white;
-        max-width: 800px;
+        max-width: 850px;
     }
 
+    #gutters {
+        padding-top: 1em;
+        padding-left: 5em;
+        padding-right: 5em;
+        padding-bottom: 1em;
+    }
 
     .flex_duo {
         flex-wrap: nowrap;
     }
 
     .title_duo {
-        flex-basis: 4rem;
+        flex-basis: auto;
+        width: 150px;
+        min-width: 150px;
     }
 
     .duo_1 {
+        flex-basis: auto;
+    }
+
+    #languages_and_technologies {
         flex-basis: auto;
     }
 
@@ -153,10 +171,16 @@ ul li ul li {
     }
 
     .title_duo {
-        flex-basis: 4rem;
+        flex-basis: auto;
+        min-width: 150px;
+        width: 150px;
     }
 
     .duo_1 {
+        flex-basis: auto;
+    }
+
+    #languages_and_technologies {
         flex-basis: auto;
     }
 }
