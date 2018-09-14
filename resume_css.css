@@ -117,13 +117,13 @@ ul li ul li {
     .sheet {
         margin: 0 auto;
         background-color: white;
-        max-width: 850px;
+        max-width: 900px;
     }
 
     #gutters {
         padding-top: 1em;
         padding-left: 5em;
-        padding-right: 5em;
+        padding-right: 7em;
         padding-bottom: 1em;
     }
 
@@ -133,8 +133,8 @@ ul li ul li {
 
     .title_duo {
         flex-basis: auto;
-        width: 150px;
-        min-width: 150px;
+        width: 120px;
+        min-width: 120px;
     }
 
     .duo_1 {
