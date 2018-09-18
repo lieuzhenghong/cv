@@ -161,7 +161,7 @@ ul li ul li {
 
     #gutters {
         padding-top: 5mm;
-        padding-left: 15mm;
+        padding-left: 12mm;
         padding-right: 15mm;
         padding-bottom: 5mm;
     }
@@ -172,8 +172,8 @@ ul li ul li {
 
     .title_duo {
         flex-basis: auto;
-        min-width: 150px;
-        width: 150px;
+        min-width: 120px;
+        width: 120px;
     }
 
     .duo_1 {
