@@ -149,6 +149,10 @@ ul li ul li {
 
 
 @media print {
+    body {
+        font-size: 14px;
+        font-family: 'Crimson Text', serif;
+    }
     #download_bar {
         display: none;
     }
