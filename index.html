@@ -9,6 +9,12 @@
 !-->
 
 <body>
+
+<style>
+	* {
+		align: center;
+	}
+</style>
 	<canvas id = 'the-canvas' style='border:1px solid black'>
 	</canvas>
     <div id="download_bar">
@@ -30,7 +36,7 @@
 		loadingTask.promise.then((pdf) => {
 			console.log("Got PDF!")
 			pdf.getPage(1).then((page) => {
-				var scale = 1;
+				var scale = 1.5;
 				var viewport = page.getViewport({scale: scale,});
 
 				var canvas = document.getElementById('the-canvas')
