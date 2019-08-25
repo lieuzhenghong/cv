@@ -1,12 +1,44 @@
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<!--
 <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 <link href="https://fperformanceonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
 
 <link rel="stylesheet" href="resume_css.css">
+!-->
+
+<body>
+	<canvas id = 'the-canvas'>
+	<script src="https://cdnjs.com/libraries/pdf.js"</script>
+	<script id="script">
+		var url = 'https://docs.google.com/document/d/1wABIZbGgDkAm-KH3avj1IjHaV_eeM6eP7rHgFBLvCK4/export?format=pdf'
+		var loadingTask = pdfjsLib.getDocument(url);
+		loadingTask.promise.then((pdf) => {
+			pdf.getPage(1).then((page) => {
+				var scale = 1;
+				var viewport = page.getViewport({scale: scale,});
+
+				var canvas = document.getElementById('the-canvas')
+				var context = canvas.getContext('2d');
+				canvas.height = viewport.height;
+				canvas.width = viewport.width;
 
 
+				// Render PDF page into canvas context
+
+				var renderContext = {
+				  canvasContext: context,
+				  viewport: viewport,
+				};
+				page.render(renderContext);
+			});
+		});
+	</script>
+</body>
+
+
+<!--
 <body class="A4">
     <section class="sheet padding-15mm">
         <div id="gutters">
@@ -250,3 +282,4 @@
     </div>
 
 </body>
+--!>
