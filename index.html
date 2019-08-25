@@ -17,6 +17,10 @@
 		console.log('script is running')
 		var url = 'https://docs.google.com/document/d/1wABIZbGgDkAm-KH3avj1IjHaV_eeM6eP7rHgFBLvCK4/export?format=pdf'
 		console.log(url)
+
+		  pdfjsLib.GlobalWorkerOptions.workerSrc =
+			'https://cdn.jsdelivr.net/npm/pdfjs-dist@2.1.266/build/pdf.worker.js'
+
 		var loadingTask = pdfjsLib.getDocument(url);
 		loadingTask.promise.then((pdf) => {
 			console.log("Got PDF!")
