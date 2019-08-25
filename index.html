@@ -9,9 +9,12 @@
 !-->
 
 <body>
-	<canvas id = 'the-canvas'></canvas>
+	<canvas id = 'the-canvas' style='border:1px solid black'>
+	</canvas>
 	<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.1.266/build/pdf.js"</script>
+
 	<script id="script">
+		console.log('script is running')
 		var url = 'https://docs.google.com/document/d/1wABIZbGgDkAm-KH3avj1IjHaV_eeM6eP7rHgFBLvCK4/export?format=pdf'
 		console.log(url)
 		var loadingTask = pdfjsLib.getDocument(url);
